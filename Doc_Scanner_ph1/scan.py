@@ -80,7 +80,7 @@ def findLargestSquare(contours, minArea=500, aspectRatioRange=(0.7, 1.3)):
 # Main Code
 webCamFeed = True
 pathImage = "1.jpg"
-cap = cv2.VideoCapture('rtsp://192.168.1.22:8080/h264.sdp')  # Use RTSP feed
+cap = cv2.VideoCapture(0)  # Use RTSP feed
 cap.set(10, 160)
 heightImg = 480
 widthImg = 480
